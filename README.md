@@ -1,5 +1,6 @@
 # spring-di
-
+![GitHub last commit](https://img.shields.io/github/last-commit/sanchezih/spring-di)
+![GitHub repo size](https://img.shields.io/github/repo-size/sanchezih/spring-di)
 
 Every Java-based application has a few objects that work together to present what the end-user sees as a working application. When writing a complex Java application, application classes should be as independent as possible of other Java classes to increase the possibility to reuse these classes and to test them independently of other classes while unit testing. Dependency Injection (or sometime called wiring) helps in gluing these classes together and at the same time keeping them independent.
 

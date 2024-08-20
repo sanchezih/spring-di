@@ -1,11 +1,11 @@
-package com.sanchezih.di.spring;
+package com.github.sanchezih.di.cb;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("app-context.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 		TextEditor te = (TextEditor) context.getBean("textEditor");
 		te.spellCheck();

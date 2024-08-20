@@ -1,4 +1,4 @@
-package com.sanchezih.di.spring;
+package com.github.sanchezih.di.cb;
 
 public class TextEditor {
 	
