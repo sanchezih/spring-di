@@ -1,20 +1,31 @@
 package com.github.sanchezih.di.sb;
 
 public class TextEditor {
-	
+
 	private SpellChecker spellChecker;
 
-	// a setter method to inject the dependency.
+	/**
+	 * Metodo setter para inyectar la dependencia
+	 * 
+	 * @param spellChecker
+	 */
 	public void setSpellChecker(SpellChecker spellChecker) {
 		System.out.println("Inside setSpellChecker.");
 		this.spellChecker = spellChecker;
 	}
 
-	// a getter method to return spellChecker
+	/**
+	 * Metodo getter que retorna el spellChecker
+	 * 
+	 * @return
+	 */
 	public SpellChecker getSpellChecker() {
 		return spellChecker;
 	}
 
+	/**
+	 * 
+	 */
 	public void spellCheck() {
 		spellChecker.checkSpelling();
 	}
