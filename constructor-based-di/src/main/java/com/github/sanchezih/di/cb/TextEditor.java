@@ -1,19 +1,13 @@
 package com.github.sanchezih.di.cb;
 
 public class TextEditor {
+	   private SpellChecker spellChecker;
 
-	private SpellChecker spellChecker;
-
-	/**
-	 * 
-	 * @param spellChecker
-	 */
-	public TextEditor(SpellChecker spellChecker) {
-		System.out.println("Inside TextEditor constructor.");
-		this.spellChecker = spellChecker;
+	   public TextEditor(SpellChecker spellChecker) {
+	      System.out.println("Inside TextEditor constructor." );
+	      this.spellChecker = spellChecker;
+	   }
+	   public void spellCheck() {
+	      spellChecker.checkSpelling();
+	   }
 	}
-
-	public void spellCheck() {
-		spellChecker.checkSpelling();
-	}
-}
